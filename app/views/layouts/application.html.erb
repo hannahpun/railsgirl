@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Railsgirls</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="topbar">
+  <div class="fill">
+    <div class="container">
+      <a class="brand" href="/">The Idea app</a>
+      <ul class="nav">
+        <li ><%= link_to 'New Idea', new_idea_path %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <%= yield %>
+</div>
+<footer>
+  <div class="container">
+    Rails Girls 2013
+  </div>
+</footer>
+</body>
+</html>
