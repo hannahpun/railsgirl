@@ -7,16 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="topbar">
+  <div class="topbar">
   <div class="fill">
     <div class="container">
-      <a class="brand" href="/">The Idea app</a>
       <ul class="nav">
-        <li ><%= link_to 'New Idea', new_idea_path %></li>
+        <li id='newList'><%= link_to 'New Idea', new_idea_path %></li>
       </ul>
     </div>
   </div>
 </div>
+
+  <div id='container'>
+
 
 <div class="container">
   <%= yield %>
@@ -26,5 +28,7 @@
     Rails Girls 2013
   </div>
 </footer>
+</div>
+ 
 </body>
 </html>

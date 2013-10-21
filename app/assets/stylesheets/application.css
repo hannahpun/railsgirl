@@ -18,3 +18,17 @@ footer { margin-top: 100px; }
 table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 
+#newList{
+	
+}
+#newList a{
+	color: #000;
+	border: #000 1px solid;
+	width: 70px;
+	padding: 5px 10px;
+	text-align: center;
+}
+.nav > li > a:hover{
+	color: #fff !important;
+	background-color: none !important;
+}
